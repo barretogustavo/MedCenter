@@ -1,0 +1,499 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Cola o layout nos cantos*/
+body{
+    margin: 0;
+    padding:0; 
+}
+
+
+header{
+    display: flex;
+    justify-content: center; /*Indica onde vai ficar o conteudo*/
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between; /*Coloca cada conteudo de um lado da pagina*/
+    width: 990px;   
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.menu{
+    display:flex;
+    align-items: center;
+}
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding:15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* o active serve para estilizar fixamente algum item*/
+nav .active a, nav a:hover{
+    background-color: #39aae1;
+    color: whitesmoke
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg'); /*Add uma imagem no site*/
+    background-position: center;
+    background-size: cover; /*em telas grandes, a imagem expande, em tela pqn, a imagem diminii*/
+    height: 670px;
+    
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1{
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner_headline h2{
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin:0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+.banner_options{
+    height: 210px;
+    display: flex;
+
+}
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner_title{
+    font-size: 21px;
+}
+
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: none;
+    text-decoration: none;
+}
+
+.banner_day{
+    display:flex;
+    border: 20px;
+    padding:15px;
+    color: white;
+    font-size:14px ;
+    border-bottom: 1px solid #5574bd;
+    justify-content: space-between;
+}
+
+/*Indica a parte de conteudo do site*/
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.widget_title{
+    margin-top:30px ;
+    margin-bottom: 20px;
+}
+
+.widget_title_text{
+    color:black;
+    font-size:16px ;
+    font-weight: bold;
+}
+.widget_title_bar{
+    background-color: #36a9e1;
+    width: 50px;
+    height:2.5px ;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; /*permite a quebra de linhas das imgs*/
+}
+
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right:20px ;
+}
+
+.widget_body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.blue_box{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #36a9e1 ;
+} 
+
+.widget_title .textcontact{
+    margin-bottom: 30px;
+}
+
+.box_cinza{
+    background-color: #CCC;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}
+.widget_title .lateraL_text_contact{
+    display: flex;
+    border-top: 1px solid #CCC ;
+    
+}
+.widget_title .lateraL_text_contact a{
+    text-decoration: none;
+    color: #5574bd;
+}
+.lateraL_text_contact .text_content{
+    font-weight: bold;
+    margin-top:20px ;
+}
+
+.lateraL_text_contact .main_text{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top:20px ;
+}
+.edit_text_widget{
+    font-size: 16px;
+}
+.edit_text_widget a {
+    font-weight: bold;
+    color: #5574bd;
+}
+
+
+article .news_data{
+    display: flex;
+}
+
+article .news_posted_at{
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 3px;
+}
+
+
+article a{
+    text-decoration: none;
+}
+
+article .news_comments{
+    
+    background-color: #39aae1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news_thumbnail img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 23px;
+}
+article .news_resume{
+    color: #5c5c5c;
+    line-height: 20px; /* espaço entre linhas*/
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.footer_menu{
+    display: flex;
+}
+.fm_1, .fm_2, .fm_3{
+    flex: 1;
+    color: white;
+}
+
+.fm_1{
+    background-color: #39aae1;
+}
+.fm_2{
+    background-color: #0079c7;
+}
+.fm_3{
+    background-color: #2b4c99;
+}
+
+.footer_area {
+    display: flex;
+}
+.flexColumn{
+    flex-direction: column;
+}
+.footer_areaitem{
+    flex: 1;
+    color: white;
+}
+footer .widget_title_text{
+    color: white;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.footer_menu .title_fm{
+    color: white;
+    font-weight: lighter;
+    
+}
+.footer_menu .resume_fm{
+    color: white;
+    font-weight: lighter;
+}
+.widget_title .resume_area_item1{
+    color:#5c5c5c ;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.widget_title .footer_local{
+    color: #5c5c5c;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+.widget_title .footer_number{
+    color: #5c5c5c;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.widget_title .container_footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.widget_title ul li{
+    color: white;
+    font-size: 12px;
+}
+.widget_title ul a{
+    text-decoration: none;
+    color:#39aae1;
+    font-size: 10px;
+}
+.widget_title ul{
+    padding-left: 0;
+}
+.widget_title .tweets{
+    padding-left: 10px;
+}
+
+
+.menu_mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line{
+    height: 3px;
+    background-color:#39aae1;
+}
+
+@media (max-width:700px){
+    .banner_headline h1{
+        font-size: 55px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+        margin-left:20px ;
+        margin-bottom: 10px;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;      
+    }
+    .banner1, .banner2, .banner3{
+        padding: 5px;
+    }
+    .banner_options a{
+        font-size: 10px;
+        margin-left: 45%;
+    }
+    .banner_title{
+        text-align: center;
+    }
+    .banner_desc{
+        text-align: center;
+    }
+
+   .widget_title{
+    margin-top: 20px;
+    margin-left: 25px;
+   }
+   article .news_data{
+       margin-left: 40px;
+   }
+   .widget_body{
+       display:block;
+       
+   }
+   article{
+    margin-left: 15%;
+   }
+   .blue_box{
+       margin-left: 25%;
+   }
+   .lateraL_text_contact .main_text{
+    margin-right: 5px;
+    margin-left: 6px;
+    font-size: 12px;
+   }
+   .lateraL_text_contact .text_content{
+       font-size: 12px;
+   }
+   .box_cinza{
+    display: none;
+   }
+   .footer_area{
+       flex-direction: column;
+   }
+   nav ul{
+       flex-direction: column;
+       display: none;
+       position: absolute;
+       left: 0;
+       width: 100%;
+       background-color: white;
+   }
+   header{
+       height: auto;
+   }
+   .logo{
+       padding-left: 20px;
+   }
+   .menu_mobile{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+   }
+}
+
+@media (max-width:540px){
+    .container{
+        flex-direction: column;
+    }
+    .logo {
+        padding-left: 125px;
+        padding-top: 12px;
+    }
+    .blue_box{
+        width:50px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .widget_body{
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
