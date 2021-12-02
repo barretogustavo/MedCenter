@@ -1,6 +1,6 @@
 # MedCenter - Site responsivo usando Flexbox
 
-Nesse projeto eu pude aplicar meus conhecimentos sobre flezbox e responsividade para criar essa página.
+Nesse projeto eu pude aplicar meus conhecimentos sobre flexbox e responsividade para criar essa página.
 
 ## Acesse o link para ver o projeto
 
